@@ -1,0 +1,13 @@
+type Moisture {
+   potName: String!
+   description: String
+   updateDate: Int!
+   moistureIndex: Int
+}
+
+type Query {
+   allMoisture: [Moisture!]
+   moistureByName(potName: String!): [Moisture!]!
+   moistureByMoistureIndex(moistureIndex: Int!): [Moisture!]!
+   moistureByLastUpdated(updateDate: Int!): [Moisture!]!
+}

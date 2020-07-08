@@ -1,0 +1,10 @@
+mutation CreateMoistureRecord {
+  createMoisture (data:{
+    potName: "Mint Terracotta"
+    updateDate: 1593631987
+    moistureIndex: 100
+  }){ potName
+    updateDate
+    moistureIndex
+  }
+}#
