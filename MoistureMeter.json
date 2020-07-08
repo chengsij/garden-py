@@ -1,0 +1,57 @@
+{
+	"info": {
+		"_postman_id": "b60c6f6c-2124-4f01-846f-17e63f6a5e5b",
+		"name": "MoistureMeter",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "CREATE new pot",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"potName\": \"Basil\",\n    \"description\": \"Basil X 2 in terracotta\",\n    \"updatedTime\": 1594180800,\n    \"moistureIndex\": 29\n}"
+				},
+				"url": {
+					"raw": "localhost:8087/updateMoisture",
+					"host": [
+						"localhost"
+					],
+					"port": "8087",
+					"path": [
+						"updateMoisture"
+					]
+				},
+				"description": "When a new pot of plant joins"
+			},
+			"response": []
+		},
+		{
+			"name": "UPDATE pot",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"potName\": \"Basil\",\n    \"updatedTime\": 1594180800,\n    \"moistureIndex\": 99\n}"
+				},
+				"url": {
+					"raw": "localhost:8087/updateMoisture/270520849650418194",
+					"host": [
+						"localhost"
+					],
+					"port": "8087",
+					"path": [
+						"updateMoisture",
+						"270520849650418194"
+					]
+				},
+				"description": "When a new pot of plant joins"
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
